@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jin - a Multimedia Designer</title>
+    <link href="personal-site.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+</head>
+
+<body>
+
+    <header>
+
+    </header>
+
+    <!-- Full-page Background Image & Captions -->
+    <div class="image">
+        <div class="caption ">
+            <span class="border">Hello, I'm Jin.</span>
+            <br>
+            <br>
+            <span class="border">a Multimedia Designer. </span>
+            <button class="portfolio" onclick="window.location.href='index.html';">
+                VIEW MY PORTFOLIO
+              </button>
+        </div>
+        
+    </div>
+
+    <!-- TOP CONTAINER: Nav Bar -->
+    <nav class="navbar">
+        
+        <ul class="nav-menu">
+            <li class="nav-item"><a href="https://www.google.com/" class="nav-link">HOME</a></li>
+            <li class="nav-item"><a href="https://www.google.com/" class="nav-link">MY WORKS</a></li>
+            <li class="nav-item"><a href="https://www.google.com/" class="nav-link">CONTACT</a></li>
+            <li class="nav-item"><a href="https://www.google.com/" class="nav-link">ABOUT</a></li>
+        </ul>
+    
+        <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+        </div>
+
+        </nav>
+
+    <!-- Profile -->
+    <div class="middle-container">
+
+        <div class="profile" id="home">
+            <div class="profile-img">
+                <img src="images\jin-6.png" alt="jin-img">
+            </div>
+
+            <div class="profile-text">
+                <h2>Graphic Design / Architectural Design / Video-editing </h2>
+                <h3>AREA OF EXPERTISE:</h3>
+                <ul>
+                    <li> Autodesk Suite: AutoCAD, Revit </li>
+                    <li> 3D Modelling: Rhinoceros, Google SketchUp </li>
+                    <li> Adobe Creative Suite: Photoshop, In-Design, Illustrator, After Effects </li>
+                    <li> Microsoft Office Suite: Excel, PowerPoint, Word and Outlook. </li>
+                    
+                </ul>
+            </div>
+        </div>
+
+        <!-- What I Can Do -->
+        <div class="skills">
+            <h1 class="my-skills">WHAT I CAN DO</h2>
+
+                <!-- SKILL ROW CLASS: Personal Skills -->
+                <div class="skill-row">
+                    <img class="personal-skills" src="images\graphic-designer.png" alt="skills-img">
+                    <h3>DESIGN WHAT YOU WANT</h3>
+                    <p class="personal-skills-description">I like to keep it simple. My  goals are to focus on typography, content and conveying the message that you want to send.
+                    </p>
+                </div>
+
+                <!-- SKILL ROW CLASS: Work Experience -->
+                <div class="skill-row">
+                    <img class="work-exp" src="images\web-design.png" alt="work-experience-img">
+                    <h3>DEVELOP WHAT YOU NEED</h3>
+                    <p class="work-experience-description"> Nature has given us all the pieces required to achieve exceptional wellness and health, but has left it to us to put these pieces together. To know how much there is to know is the beginning of learning to live. </p>
+                </div>
+                <button onclick="changeColour()">Click Me to change the page background color</button>
+        </div>
+       
+
+        <!-- Mission2: Photo slideshow using Javascript -->
+        <h1 class="slide-title">WORKS</h1>
+        <h1 id="helloWorldHeader">Playing with the DOM</h1>
+        <div class="portfolio_slide">
+        
+        <!-- Slider main container -->
+        <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="images\portfolio_1.png" alt="portfolio-img1"></div>
+        <div class="swiper-slide"><img src="images\portfolio_2.png" alt="portfolio-img2"></div>
+        <div class="swiper-slide"><img src="images\portfolio_3.png" alt="portfolio-img3"></div>
+        <div class="swiper-slide"><img src="images\portfolio_4.png" alt="portfolio-img4"></div>
+        <div class="swiper-slide"><img src="images\portfolio_5.png" alt="portfolio-img5"></div>
+        <div class="swiper-slide"><img src="images\portfolio_6.png" alt="portfolio-img6"></div>
+
+      ...
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+  
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+  
+        </div>
+        </div>
+        
+    <!-- Photo slideshow -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+
+        <!-- GET IN TOUCH: Contact Me Form & Sending message via Email -->
+        <div class="contact-me">
+            <h1>GET IN TOUCH</h1>
+            <h3>Feel free to get in touch with me</h3>
+            <p class="contact-message">“Be a positive energy trampoline – absorb what you need and rebound more back.”</p>
+
+            <form action="mailto:jinz@missionreadyhq.com" method:"post">
+                <label for="">Name:</label>
+                <input type="text">
+                <br>
+                <label class="Subject">Email:</label>
+                <input type="text">
+                <br>
+                <br>
+                <label>Message:</label>
+                <br>
+                <textarea class="textarea" name="name" rows="10" cols="40"></textarea><br>
+                <input type="submit" href="mailto:jinzh235@gmail.com" name="">
+
+            </form>
+            <!-- <a class="btn" href="mailto:jinzh235@gmail.com">CONTACT ME</a> -->
+        </div>
+    </div>
+
+    <!-- BOTTOM CONTAINER CLASS: Footer of the webpage -->
+    <div class="bottom-container">
+        <div class="footer-img"></div>
+        <a class="footer-link" href="https://www.linkedin.com/">LinkedIn</a>
+        <a class="footer-link" href="https://twitter.com/">Twitter</a>
+        <a class="footer-link" href="https://www.appbrewery.co/">Website</a>
+        <p class="copy-rights">© 2022 Jin Zhang. All rights reserved.</p>
+    </div>
+
+    <script defer src="mission2.js"></script>
+</body>
+
+</html>
